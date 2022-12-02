@@ -1,0 +1,2 @@
+﻿# WORDPAD
+> Progetto scolastico
