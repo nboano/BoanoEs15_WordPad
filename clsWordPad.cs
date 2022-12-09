@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
 
 namespace WordPad
 {
@@ -176,6 +178,20 @@ namespace WordPad
                 new1 = new Font(old1, old1.Style | FontStyle.Italic);
 
             rtb.SelectionFont = new1;
+        }
+        public static void InsertImageFromFile(RichTextBox rtb)
+        {
+            FileDialog fDialog = new OpenFileDialog() {
+                Title = "Inserisci un'immagine nel FlopPad",
+                Multiselect = false,
+                Filter = "Immagini |*.bmp;*.jpg;*.png;*.gif;*.ico",
+            };
+            if (fDialog.ShowDialog() == DialogResult.OK)
+            {
+                var image = Image.FromFile(fDialog.FileName);
+                Clipboard.SetImage(image);
+                rtb.Paste();
+            }
         }
         #endregion
     }

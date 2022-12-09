@@ -53,5 +53,6 @@ namespace BoanoEs15_WordPad
         private void ItalicbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Italic(rtb);
         private void UnderlinebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Underline(rtb);
         private void PageColorbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickPageColor(rtb);
+        private void ImgFromFilebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.InsertImageFromFile(rtb);
     }
 }

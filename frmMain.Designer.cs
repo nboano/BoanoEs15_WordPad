@@ -93,6 +93,7 @@
             this.ItalicbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.UnderlinebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.PageColorbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.ImgFromFilebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -391,9 +392,10 @@
             this.BoldbarButtonItem,
             this.ItalicbarButtonItem,
             this.UnderlinebarButtonItem,
-            this.PageColorbarButtonItem});
+            this.PageColorbarButtonItem,
+            this.ImgFromFilebarButtonItem});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 19;
+            this.ribbonControl1.MaxItemId = 20;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.FileribbonPage,
@@ -580,6 +582,7 @@
             // 
             // ImgribbonPageGroup
             // 
+            this.ImgribbonPageGroup.ItemLinks.Add(this.ImgFromFilebarButtonItem);
             this.ImgribbonPageGroup.Name = "ImgribbonPageGroup";
             this.ImgribbonPageGroup.Text = "Immagine";
             // 
@@ -647,6 +650,15 @@
             this.PageColorbarButtonItem.Name = "PageColorbarButtonItem";
             this.PageColorbarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.PageColorbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.PageColorbarButtonItem_ItemClick);
+            // 
+            // ImgFromFilebarButtonItem
+            // 
+            this.ImgFromFilebarButtonItem.Caption = "Da File";
+            this.ImgFromFilebarButtonItem.Id = 19;
+            this.ImgFromFilebarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ImgFromFilebarButtonItem.ImageOptions.Image")));
+            this.ImgFromFilebarButtonItem.Name = "ImgFromFilebarButtonItem";
+            this.ImgFromFilebarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.ImgFromFilebarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ImgFromFilebarButtonItem_ItemClick);
             // 
             // frmMain
             // 
@@ -736,6 +748,7 @@
         private DevExpress.XtraBars.BarButtonItem ItalicbarButtonItem;
         private DevExpress.XtraBars.BarButtonItem UnderlinebarButtonItem;
         private DevExpress.XtraBars.BarButtonItem PageColorbarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem ImgFromFilebarButtonItem;
     }
 }
 
