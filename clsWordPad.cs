@@ -193,6 +193,15 @@ namespace WordPad
                 rtb.Paste();
             }
         }
+        public static void SetTemplate(RichTextBox rtb, (Font, Color) template)
+        {
+            rtb.SelectionFont = template.Item1;
+            rtb.SelectionColor = template.Item2;
+        }
         #endregion
+    }
+    public static class Templates
+    {
+        public static (Font, Color) Normale = (new Font("Arial", 11, FontStyle.Regular), Color.Black);
     }
 }

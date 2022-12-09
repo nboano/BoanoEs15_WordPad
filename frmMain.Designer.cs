@@ -94,6 +94,11 @@
             this.UnderlinebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.PageColorbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.ImgFromFilebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.AlignmentribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.AlignSXbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.AlignCenterbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.AlignDXbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.ElPuntatobarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -393,13 +398,17 @@
             this.ItalicbarButtonItem,
             this.UnderlinebarButtonItem,
             this.PageColorbarButtonItem,
-            this.ImgFromFilebarButtonItem});
+            this.ImgFromFilebarButtonItem,
+            this.AlignSXbarButtonItem,
+            this.AlignCenterbarButtonItem,
+            this.AlignDXbarButtonItem,
+            this.ElPuntatobarButtonItem});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 20;
+            this.ribbonControl1.MaxItemId = 24;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.FileribbonPage,
             this.HomeribbonPage,
+            this.FileribbonPage,
             this.InsertribbonPage});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019;
             this.ribbonControl1.Size = new System.Drawing.Size(1319, 170);
@@ -433,6 +442,7 @@
             this.AppuntiribbonPageGroup,
             this.UndoRedoribbonPageGroup,
             this.FontribbonPageGroup,
+            this.AlignmentribbonPageGroup,
             this.ColorribbonPageGroup});
             this.HomeribbonPage.Name = "HomeribbonPage";
             this.HomeribbonPage.Text = "Home";
@@ -660,6 +670,45 @@
             this.ImgFromFilebarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.ImgFromFilebarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ImgFromFilebarButtonItem_ItemClick);
             // 
+            // AlignmentribbonPageGroup
+            // 
+            this.AlignmentribbonPageGroup.ItemLinks.Add(this.AlignSXbarButtonItem);
+            this.AlignmentribbonPageGroup.ItemLinks.Add(this.AlignCenterbarButtonItem);
+            this.AlignmentribbonPageGroup.ItemLinks.Add(this.AlignDXbarButtonItem);
+            this.AlignmentribbonPageGroup.ItemLinks.Add(this.ElPuntatobarButtonItem);
+            this.AlignmentribbonPageGroup.Name = "AlignmentribbonPageGroup";
+            this.AlignmentribbonPageGroup.Text = "Allineamento";
+            // 
+            // AlignSXbarButtonItem
+            // 
+            this.AlignSXbarButtonItem.Id = 20;
+            this.AlignSXbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("AlignSXbarButtonItem.ImageOptions.Image")));
+            this.AlignSXbarButtonItem.Name = "AlignSXbarButtonItem";
+            this.AlignSXbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.AlignSXbarButtonItem_ItemClick);
+            // 
+            // AlignCenterbarButtonItem
+            // 
+            this.AlignCenterbarButtonItem.Id = 21;
+            this.AlignCenterbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("AlignCenterbarButtonItem.ImageOptions.Image")));
+            this.AlignCenterbarButtonItem.Name = "AlignCenterbarButtonItem";
+            this.AlignCenterbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.AlignCenterbarButtonItem_ItemClick);
+            // 
+            // AlignDXbarButtonItem
+            // 
+            this.AlignDXbarButtonItem.Id = 22;
+            this.AlignDXbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("AlignDXbarButtonItem.ImageOptions.Image")));
+            this.AlignDXbarButtonItem.Name = "AlignDXbarButtonItem";
+            this.AlignDXbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.AlignDXbarButtonItem_ItemClick);
+            // 
+            // ElPuntatobarButtonItem
+            // 
+            this.ElPuntatobarButtonItem.Caption = "Elenco Puntato";
+            this.ElPuntatobarButtonItem.Id = 23;
+            this.ElPuntatobarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ElPuntatobarButtonItem.ImageOptions.Image")));
+            this.ElPuntatobarButtonItem.Name = "ElPuntatobarButtonItem";
+            this.ElPuntatobarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.ElPuntatobarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ElPuntatobarButtonItem_ItemClick);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -749,6 +798,11 @@
         private DevExpress.XtraBars.BarButtonItem UnderlinebarButtonItem;
         private DevExpress.XtraBars.BarButtonItem PageColorbarButtonItem;
         private DevExpress.XtraBars.BarButtonItem ImgFromFilebarButtonItem;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup AlignmentribbonPageGroup;
+        private DevExpress.XtraBars.BarButtonItem AlignSXbarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem AlignCenterbarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem AlignDXbarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem ElPuntatobarButtonItem;
     }
 }
 

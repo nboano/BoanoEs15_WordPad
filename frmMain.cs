@@ -14,6 +14,7 @@ namespace BoanoEs15_WordPad
         {
             CurrentDocument.Modified = false;
             CurrentDocument.New(rtb, this);
+            CurrentDocument.SetTemplate(rtb, Templates.Normale);
         }
         #region HANDLERS
         private void rtb_TextChanged(object sender, EventArgs e) => CurrentDocument.TextModified(this);
@@ -54,5 +55,9 @@ namespace BoanoEs15_WordPad
         private void UnderlinebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Underline(rtb);
         private void PageColorbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickPageColor(rtb);
         private void ImgFromFilebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.InsertImageFromFile(rtb);
+        private void AlignSXbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.SelectionAlignment = HorizontalAlignment.Left;
+        private void AlignCenterbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.SelectionAlignment = HorizontalAlignment.Center;
+        private void AlignDXbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.SelectionAlignment = HorizontalAlignment.Right;
+        private void ElPuntatobarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.SelectionBullet = !rtb.SelectionBullet;
     }
 }

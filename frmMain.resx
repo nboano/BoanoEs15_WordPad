@@ -490,6 +490,36 @@
         YGJK1tBhAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="AlignSXbarButtonItem.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAABDSURBVEhL7dCxCQAwDANB7790ssBDQPApjA6+MbjRrHQ+hUejytGeSU/0lFQe2tsIj0aVoz2T
+        nugpqTy0txEejVaZuWzu4x3TXhBEAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="AlignCenterbarButtonItem.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAABFSURBVEhL7dCxCQAwDANB7790ssBDQEgpjA6+MbjRrHQ+hcdE5UP7Kj3Rk1L50L6J8JiofGhf
+        pSd6Uiof2jcRHhOtMnMB8SPjHdQGkykAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="AlignDXbarButtonItem.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAABDSURBVEhL7dCxCQAwDANB7790ssBDQPApjA6+MbjRrHQ+hUej8tDeSU/0lFQ52tMIj0blob2T
+        nugpqXK0pxEejVaZuXVn4x0sFBioAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ElPuntatobarButtonItem.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAADSSURBVGhD7ddBCsIwFEXRLkTHbkXdqSK4Ix3osIq6AX0P4iQkDpqmhXgP3JHEENoGfgcAAICZ
+        LdVBvUJHtVJN8mFv6h11V/6tOX6y8WG/7VXOVp1Val2NvNdGFfMrnNrAPVXOVaXW1Oyiiv068EPlePPU
+        mpqNcmBfUKk/dzuV49frpFLrauS91qqYb2NfUPEGvVqoJvk29gXlb9b5yTZ7WAAAMC/mYcU8HGEeniDm
+        4SGYh0PMwwAAAGNgHlbMwxHm4QliHh6CeTjEPAwAAID/1XUfWdjvr92tkPsAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="barButtonItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
