@@ -60,7 +60,7 @@ namespace WordPad
                 Save(rtb, f);
             rtb.Clear();
             filename = null;
-            f.Text = $"{RelativeFileName} - My WordPad";
+            f.Text = $"{RelativeFileName} - FlopPad 💀";
         }
         public static void Open(RichTextBox rtb, Form f)
         {
@@ -79,7 +79,7 @@ namespace WordPad
                 rtb.LoadFile(FileName);
 
                 Modified = false;
-                f.Text = $"{RelativeFileName} - My WordPad";
+                f.Text = $"{RelativeFileName} - FlopPad 💀";
             }
         }
         public static void Save(RichTextBox rtb, Form f)
@@ -90,7 +90,7 @@ namespace WordPad
                 rtb.SaveFile(FileName);
 
             Modified = false;
-            f.Text = $"{RelativeFileName} - My WordPad";
+            f.Text = $"{RelativeFileName} - FlopPad 💀";
         }
         public static void SaveAs(RichTextBox rtb, Form f)
         {
@@ -107,7 +107,7 @@ namespace WordPad
                 rtb.SaveFile(FileName);
 
                 Modified = false;
-                f.Text = $"{RelativeFileName} - My WordPad";
+                f.Text = $"{RelativeFileName} - FlopPad 💀";
             }
         }
         #endregion

@@ -4,7 +4,7 @@ using WordPad;
 
 namespace BoanoEs15_WordPad
 {
-    public partial class frmMain : Form
+    public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public frmMain()
         {
@@ -36,5 +36,15 @@ namespace BoanoEs15_WordPad
         private void redotoolStripButton_Click(object sender, EventArgs e) => rtb.Redo();
         private void ripristinaToolStripMenuItem_Click(object sender, EventArgs e) => rtb.Redo();
         #endregion
+
+        private void IncollabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Paste();
+        private void TagliabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Cut();
+        private void CopiabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Copy();
+        private void NuovoDocButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.New(rtb, this);
+        private void ApribarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Open(rtb, this);
+        private void SalvaDocBarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Save(rtb, this);
+        private void SaveAsbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.SaveAs(rtb, this);
+        private void UndobarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Undo();
+        private void RedobarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Redo();
     }
 }

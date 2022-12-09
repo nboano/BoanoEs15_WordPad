@@ -29,17 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.toolStrip = new System.Windows.Forms.ToolStrip();
-            this.nuovoToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.apriToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.salvaToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.stampaToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.tagliaToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.copiaToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.incollaToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.ToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuovoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,124 +60,34 @@
             this.cercaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.informazionisuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.UndotoolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.redotoolStripButton = new System.Windows.Forms.ToolStripButton();
             this.rtb = new System.Windows.Forms.RichTextBox();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStrip.SuspendLayout();
+            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.SalvaBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.NuovobarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.IncollabarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.HomeribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.AppuntiribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
+            this.TagliabarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.CopiabarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.FileribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.FGestribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.NuovoDocButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.ApribarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.SalvaribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.SalvaDocBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.SaveAsbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.UndoRedoribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.UndobarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.RedobarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.FontribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.InsertribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ImgribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.menuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // toolStrip
-            // 
-            this.toolStrip.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuovoToolStripButton,
-            this.apriToolStripButton,
-            this.salvaToolStripButton,
-            this.stampaToolStripButton,
-            this.toolStripSeparator,
-            this.tagliaToolStripButton,
-            this.copiaToolStripButton,
-            this.incollaToolStripButton,
-            this.toolStripSeparator1,
-            this.UndotoolStripButton,
-            this.redotoolStripButton,
-            this.toolStripSeparator8,
-            this.ToolStripButton});
-            this.toolStrip.Location = new System.Drawing.Point(0, 24);
-            this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(800, 25);
-            this.toolStrip.TabIndex = 0;
-            this.toolStrip.Text = "toolStrip";
-            // 
-            // nuovoToolStripButton
-            // 
-            this.nuovoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.nuovoToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("nuovoToolStripButton.Image")));
-            this.nuovoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.nuovoToolStripButton.Name = "nuovoToolStripButton";
-            this.nuovoToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.nuovoToolStripButton.Text = "&Nuovo";
-            this.nuovoToolStripButton.Click += new System.EventHandler(this.nuovoToolStripButton_Click);
-            // 
-            // apriToolStripButton
-            // 
-            this.apriToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.apriToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("apriToolStripButton.Image")));
-            this.apriToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.apriToolStripButton.Name = "apriToolStripButton";
-            this.apriToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.apriToolStripButton.Text = "&Apri";
-            this.apriToolStripButton.Click += new System.EventHandler(this.apriToolStripButton_Click);
-            // 
-            // salvaToolStripButton
-            // 
-            this.salvaToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.salvaToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("salvaToolStripButton.Image")));
-            this.salvaToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.salvaToolStripButton.Name = "salvaToolStripButton";
-            this.salvaToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.salvaToolStripButton.Text = "&Salva";
-            this.salvaToolStripButton.Click += new System.EventHandler(this.salvaToolStripButton_Click);
-            // 
-            // stampaToolStripButton
-            // 
-            this.stampaToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.stampaToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("stampaToolStripButton.Image")));
-            this.stampaToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.stampaToolStripButton.Name = "stampaToolStripButton";
-            this.stampaToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.stampaToolStripButton.Text = "&Stampa";
-            // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // tagliaToolStripButton
-            // 
-            this.tagliaToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tagliaToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("tagliaToolStripButton.Image")));
-            this.tagliaToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tagliaToolStripButton.Name = "tagliaToolStripButton";
-            this.tagliaToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.tagliaToolStripButton.Text = "&Taglia";
-            this.tagliaToolStripButton.Click += new System.EventHandler(this.tagliaToolStripButton_Click);
-            // 
-            // copiaToolStripButton
-            // 
-            this.copiaToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.copiaToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("copiaToolStripButton.Image")));
-            this.copiaToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.copiaToolStripButton.Name = "copiaToolStripButton";
-            this.copiaToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.copiaToolStripButton.Text = "&Copia";
-            this.copiaToolStripButton.Click += new System.EventHandler(this.copiaToolStripButton_Click);
-            // 
-            // incollaToolStripButton
-            // 
-            this.incollaToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.incollaToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("incollaToolStripButton.Image")));
-            this.incollaToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.incollaToolStripButton.Name = "incollaToolStripButton";
-            this.incollaToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.incollaToolStripButton.Text = "&Incolla";
-            this.incollaToolStripButton.Click += new System.EventHandler(this.incollaToolStripButton_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // ToolStripButton
-            // 
-            this.ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.ToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripButton.Image")));
-            this.ToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ToolStripButton.Name = "ToolStripButton";
-            this.ToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.ToolStripButton.Text = "&?";
             // 
             // menuStrip
             // 
@@ -197,11 +96,12 @@
             this.modificaToolStripMenuItem,
             this.strumentiToolStripMenuItem,
             this.ToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Location = new System.Drawing.Point(0, 170);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip.Size = new System.Drawing.Size(1319, 24);
             this.menuStrip.TabIndex = 1;
             this.menuStrip.Text = "menuStrip1";
+            this.menuStrip.Visible = false;
             // 
             // fileToolStripMenuItem
             // 
@@ -341,7 +241,7 @@
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(169, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
             // 
             // tagliaToolStripMenuItem
             // 
@@ -376,12 +276,12 @@
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(169, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
             // 
             // selezionatuttoToolStripMenuItem
             // 
             this.selezionatuttoToolStripMenuItem.Name = "selezionatuttoToolStripMenuItem";
-            this.selezionatuttoToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.selezionatuttoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.selezionatuttoToolStripMenuItem.Text = "Seleziona &tutto";
             // 
             // strumentiToolStripMenuItem
@@ -396,13 +296,13 @@
             // personalizzaToolStripMenuItem
             // 
             this.personalizzaToolStripMenuItem.Name = "personalizzaToolStripMenuItem";
-            this.personalizzaToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.personalizzaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.personalizzaToolStripMenuItem.Text = "&Personalizza";
             // 
             // opzioniToolStripMenuItem
             // 
             this.opzioniToolStripMenuItem.Name = "opzioniToolStripMenuItem";
-            this.opzioniToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.opzioniToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.opzioniToolStripMenuItem.Text = "&Opzioni";
             // 
             // ToolStripMenuItem
@@ -420,51 +320,31 @@
             // sommarioToolStripMenuItem
             // 
             this.sommarioToolStripMenuItem.Name = "sommarioToolStripMenuItem";
-            this.sommarioToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.sommarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sommarioToolStripMenuItem.Text = "&Sommario";
             // 
             // indiceToolStripMenuItem
             // 
             this.indiceToolStripMenuItem.Name = "indiceToolStripMenuItem";
-            this.indiceToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.indiceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.indiceToolStripMenuItem.Text = "&Indice";
             // 
             // cercaToolStripMenuItem
             // 
             this.cercaToolStripMenuItem.Name = "cercaToolStripMenuItem";
-            this.cercaToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.cercaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cercaToolStripMenuItem.Text = "&Cerca";
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(162, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(177, 6);
             // 
             // informazionisuToolStripMenuItem
             // 
             this.informazionisuToolStripMenuItem.Name = "informazionisuToolStripMenuItem";
-            this.informazionisuToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.informazionisuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.informazionisuToolStripMenuItem.Text = "&Informazioni su...";
-            // 
-            // UndotoolStripButton
-            // 
-            this.UndotoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.UndotoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("UndotoolStripButton.Image")));
-            this.UndotoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.UndotoolStripButton.Name = "UndotoolStripButton";
-            this.UndotoolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.UndotoolStripButton.Text = "Indietro";
-            this.UndotoolStripButton.Click += new System.EventHandler(this.UndotoolStripButton_Click);
-            // 
-            // redotoolStripButton
-            // 
-            this.redotoolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.redotoolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("redotoolStripButton.Image")));
-            this.redotoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.redotoolStripButton.Name = "redotoolStripButton";
-            this.redotoolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.redotoolStripButton.Text = "Ripristina";
-            this.redotoolStripButton.Click += new System.EventHandler(this.redotoolStripButton_Click);
             // 
             // rtb
             // 
@@ -472,53 +352,240 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtb.Location = new System.Drawing.Point(79, 72);
+            this.rtb.Location = new System.Drawing.Point(79, 187);
             this.rtb.Name = "rtb";
-            this.rtb.Size = new System.Drawing.Size(617, 385);
+            this.rtb.Size = new System.Drawing.Size(1136, 504);
             this.rtb.TabIndex = 2;
             this.rtb.Text = "";
             this.rtb.TextChanged += new System.EventHandler(this.rtb_TextChanged);
             // 
-            // toolStripSeparator8
+            // ribbonControl1
             // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 25);
+            this.ribbonControl1.BackColor = System.Drawing.Color.White;
+            this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl1.ExpandCollapseItem,
+            this.ribbonControl1.SearchEditItem,
+            this.SalvaBarButtonItem,
+            this.NuovobarButtonItem,
+            this.IncollabarButtonItem,
+            this.TagliabarButtonItem,
+            this.CopiabarButtonItem,
+            this.NuovoDocButtonItem,
+            this.ApribarButtonItem,
+            this.SalvaDocBarButtonItem,
+            this.SaveAsbarButtonItem,
+            this.UndobarButtonItem,
+            this.RedobarButtonItem});
+            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.MaxItemId = 12;
+            this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.FileribbonPage,
+            this.HomeribbonPage,
+            this.InsertribbonPage});
+            this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019;
+            this.ribbonControl1.Size = new System.Drawing.Size(1319, 170);
+            // 
+            // SalvaBarButtonItem
+            // 
+            this.SalvaBarButtonItem.Caption = "Salva";
+            this.SalvaBarButtonItem.Id = 1;
+            this.SalvaBarButtonItem.ImageOptions.Image = global::BoanoEs15_WordPad.Properties.Resources.Save;
+            this.SalvaBarButtonItem.Name = "SalvaBarButtonItem";
+            // 
+            // NuovobarButtonItem
+            // 
+            this.NuovobarButtonItem.Caption = "Nuovo";
+            this.NuovobarButtonItem.Id = 2;
+            this.NuovobarButtonItem.ImageOptions.Image = global::BoanoEs15_WordPad.Properties.Resources.NewDocument;
+            this.NuovobarButtonItem.Name = "NuovobarButtonItem";
+            // 
+            // IncollabarButtonItem
+            // 
+            this.IncollabarButtonItem.Caption = "Incolla";
+            this.IncollabarButtonItem.Id = 3;
+            this.IncollabarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("IncollabarButtonItem.ImageOptions.Image")));
+            this.IncollabarButtonItem.Name = "IncollabarButtonItem";
+            this.IncollabarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.IncollabarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.IncollabarButtonItem_ItemClick);
+            // 
+            // HomeribbonPage
+            // 
+            this.HomeribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.AppuntiribbonPageGroup,
+            this.UndoRedoribbonPageGroup,
+            this.FontribbonPageGroup});
+            this.HomeribbonPage.Name = "HomeribbonPage";
+            this.HomeribbonPage.Text = "Home";
+            // 
+            // AppuntiribbonPageGroup
+            // 
+            this.AppuntiribbonPageGroup.ItemLinks.Add(this.IncollabarButtonItem);
+            this.AppuntiribbonPageGroup.ItemLinks.Add(this.TagliabarButtonItem);
+            this.AppuntiribbonPageGroup.ItemLinks.Add(this.CopiabarButtonItem);
+            this.AppuntiribbonPageGroup.Name = "AppuntiribbonPageGroup";
+            this.AppuntiribbonPageGroup.Text = "Appunti";
+            // 
+            // fluentDesignFormContainer1
+            // 
+            this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(0, 170);
+            this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(1319, 514);
+            this.fluentDesignFormContainer1.TabIndex = 4;
+            // 
+            // TagliabarButtonItem
+            // 
+            this.TagliabarButtonItem.Id = 4;
+            this.TagliabarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TagliabarButtonItem.ImageOptions.Image")));
+            this.TagliabarButtonItem.Name = "TagliabarButtonItem";
+            this.TagliabarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TagliabarButtonItem_ItemClick);
+            // 
+            // CopiabarButtonItem
+            // 
+            this.CopiabarButtonItem.Id = 5;
+            this.CopiabarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("CopiabarButtonItem.ImageOptions.Image")));
+            this.CopiabarButtonItem.Name = "CopiabarButtonItem";
+            this.CopiabarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.CopiabarButtonItem_ItemClick);
+            // 
+            // FileribbonPage
+            // 
+            this.FileribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.FGestribbonPageGroup,
+            this.SalvaribbonPageGroup});
+            this.FileribbonPage.Name = "FileribbonPage";
+            this.FileribbonPage.Text = "File";
+            // 
+            // FGestribbonPageGroup
+            // 
+            this.FGestribbonPageGroup.ItemLinks.Add(this.NuovoDocButtonItem);
+            this.FGestribbonPageGroup.ItemLinks.Add(this.ApribarButtonItem);
+            this.FGestribbonPageGroup.Name = "FGestribbonPageGroup";
+            // 
+            // NuovoDocButtonItem
+            // 
+            this.NuovoDocButtonItem.Caption = "Nuovo";
+            this.NuovoDocButtonItem.Id = 6;
+            this.NuovoDocButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("NuovoDocButtonItem.ImageOptions.Image")));
+            this.NuovoDocButtonItem.Name = "NuovoDocButtonItem";
+            this.NuovoDocButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.NuovoDocButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.NuovoDocButtonItem_ItemClick);
+            // 
+            // ApribarButtonItem
+            // 
+            this.ApribarButtonItem.Caption = "Apri";
+            this.ApribarButtonItem.Id = 7;
+            this.ApribarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ApribarButtonItem.ImageOptions.Image")));
+            this.ApribarButtonItem.Name = "ApribarButtonItem";
+            this.ApribarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.ApribarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ApribarButtonItem_ItemClick);
+            // 
+            // SalvaribbonPageGroup
+            // 
+            this.SalvaribbonPageGroup.ItemLinks.Add(this.SalvaDocBarButtonItem);
+            this.SalvaribbonPageGroup.ItemLinks.Add(this.SaveAsbarButtonItem);
+            this.SalvaribbonPageGroup.Name = "SalvaribbonPageGroup";
+            this.SalvaribbonPageGroup.Text = "Salva il documento";
+            // 
+            // SalvaDocBarButtonItem
+            // 
+            this.SalvaDocBarButtonItem.Caption = "Salva";
+            this.SalvaDocBarButtonItem.Id = 8;
+            this.SalvaDocBarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SalvaDocBarButtonItem.ImageOptions.Image")));
+            this.SalvaDocBarButtonItem.Name = "SalvaDocBarButtonItem";
+            this.SalvaDocBarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.SalvaDocBarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.SalvaDocBarButtonItem_ItemClick);
+            // 
+            // SaveAsbarButtonItem
+            // 
+            this.SaveAsbarButtonItem.Caption = "Salva con nome...";
+            this.SaveAsbarButtonItem.Id = 9;
+            this.SaveAsbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SaveAsbarButtonItem.ImageOptions.Image")));
+            this.SaveAsbarButtonItem.Name = "SaveAsbarButtonItem";
+            this.SaveAsbarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.SaveAsbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.SaveAsbarButtonItem_ItemClick);
+            // 
+            // UndoRedoribbonPageGroup
+            // 
+            this.UndoRedoribbonPageGroup.ItemLinks.Add(this.UndobarButtonItem);
+            this.UndoRedoribbonPageGroup.ItemLinks.Add(this.RedobarButtonItem);
+            this.UndoRedoribbonPageGroup.Name = "UndoRedoribbonPageGroup";
+            // 
+            // UndobarButtonItem
+            // 
+            this.UndobarButtonItem.Caption = "Annulla";
+            this.UndobarButtonItem.Id = 10;
+            this.UndobarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UndobarButtonItem.ImageOptions.Image")));
+            this.UndobarButtonItem.Name = "UndobarButtonItem";
+            this.UndobarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.UndobarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UndobarButtonItem_ItemClick);
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Annulla";
+            this.barButtonItem1.Id = 10;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Annulla";
+            this.barButtonItem2.Id = 10;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // RedobarButtonItem
+            // 
+            this.RedobarButtonItem.Caption = "Ripristina";
+            this.RedobarButtonItem.Id = 11;
+            this.RedobarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("RedobarButtonItem.ImageOptions.Image")));
+            this.RedobarButtonItem.Name = "RedobarButtonItem";
+            this.RedobarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.RedobarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.RedobarButtonItem_ItemClick);
+            // 
+            // FontribbonPageGroup
+            // 
+            this.FontribbonPageGroup.Name = "FontribbonPageGroup";
+            this.FontribbonPageGroup.Text = "Carattere";
+            // 
+            // InsertribbonPage
+            // 
+            this.InsertribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ImgribbonPageGroup});
+            this.InsertribbonPage.Name = "InsertribbonPage";
+            this.InsertribbonPage.Text = "Inserisci";
+            // 
+            // ImgribbonPageGroup
+            // 
+            this.ImgribbonPageGroup.Name = "ImgribbonPageGroup";
+            this.ImgribbonPageGroup.Text = "Immagine";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1319, 684);
             this.Controls.Add(this.rtb);
-            this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.menuStrip);
+            this.Controls.Add(this.fluentDesignFormContainer1);
+            this.Controls.Add(this.ribbonControl1);
             this.MainMenuStrip = this.menuStrip;
             this.Name = "frmMain";
-            this.Text = "My WordPad";
+            this.Ribbon = this.ribbonControl1;
+            this.Text = "FlopPad 💀";
             this.Load += new System.EventHandler(this.frmMain_Load);
-            this.toolStrip.ResumeLayout(false);
-            this.toolStrip.PerformLayout();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolStrip toolStrip;
-        private System.Windows.Forms.ToolStripButton nuovoToolStripButton;
-        private System.Windows.Forms.ToolStripButton apriToolStripButton;
-        private System.Windows.Forms.ToolStripButton salvaToolStripButton;
-        private System.Windows.Forms.ToolStripButton stampaToolStripButton;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
-        private System.Windows.Forms.ToolStripButton tagliaToolStripButton;
-        private System.Windows.Forms.ToolStripButton copiaToolStripButton;
-        private System.Windows.Forms.ToolStripButton incollaToolStripButton;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton ToolStripButton;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuovoToolStripMenuItem;
@@ -550,10 +617,31 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.ToolStripMenuItem informazionisuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ImpostaPaginatoolStripMenuItem;
-        private System.Windows.Forms.ToolStripButton UndotoolStripButton;
-        private System.Windows.Forms.ToolStripButton redotoolStripButton;
         private System.Windows.Forms.RichTextBox rtb;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
+        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage HomeribbonPage;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup AppuntiribbonPageGroup;
+        private DevExpress.XtraBars.BarButtonItem SalvaBarButtonItem;
+        private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer fluentDesignFormContainer1;
+        private DevExpress.XtraBars.BarButtonItem NuovobarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem IncollabarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem TagliabarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem CopiabarButtonItem;
+        private DevExpress.XtraBars.Ribbon.RibbonPage FileribbonPage;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup FGestribbonPageGroup;
+        private DevExpress.XtraBars.BarButtonItem NuovoDocButtonItem;
+        private DevExpress.XtraBars.BarButtonItem ApribarButtonItem;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup SalvaribbonPageGroup;
+        private DevExpress.XtraBars.BarButtonItem SalvaDocBarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem SaveAsbarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem UndobarButtonItem;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup UndoRedoribbonPageGroup;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem RedobarButtonItem;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup FontribbonPageGroup;
+        private DevExpress.XtraBars.Ribbon.RibbonPage InsertribbonPage;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ImgribbonPageGroup;
     }
 }
 
