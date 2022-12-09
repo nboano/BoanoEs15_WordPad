@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WordPad
 {
@@ -109,6 +111,71 @@ namespace WordPad
                 Modified = false;
                 f.Text = $"{RelativeFileName} - FlopPad 💀";
             }
+        }
+        public static void PickFont(RichTextBox rtb)
+        {
+            var ftp = new FontDialog() { Font = rtb.SelectionFont };
+            if (ftp.ShowDialog() == DialogResult.OK)
+            {
+                rtb.SelectionFont = ftp.Font;
+            }
+        }
+        public static void PickColor(RichTextBox rtb)
+        {
+            var cdl = new ColorDialog() { Color = rtb.SelectionColor };
+            if(cdl.ShowDialog() == DialogResult.OK)
+            {
+                rtb.SelectionColor = cdl.Color;
+            }
+        }
+        public static void PickBackColor(RichTextBox rtb)
+        {
+            var cdl = new ColorDialog() { Color = rtb.SelectionBackColor };
+            if (cdl.ShowDialog() == DialogResult.OK)
+            {
+                rtb.SelectionBackColor = cdl.Color;
+            }
+        }
+        public static void PickPageColor(RichTextBox rtb)
+        {
+            var cdl = new ColorDialog() { Color = rtb.BackColor };
+            if (cdl.ShowDialog() == DialogResult.OK)
+            {
+                rtb.BackColor = cdl.Color;
+            }
+        }
+        public static void Bolderize(RichTextBox rtb)
+        {
+            Font new1, old1;
+            old1 = rtb.SelectionFont;
+            if (old1.Bold)
+                new1 = new Font(old1, old1.Style & ~FontStyle.Bold);
+            else
+                new1 = new Font(old1, old1.Style | FontStyle.Bold);
+
+            rtb.SelectionFont = new1;
+        }
+        public static void Underline(RichTextBox rtb)
+        {
+            Font new1, old1;
+            old1 = rtb.SelectionFont;
+            if (old1.Underline)
+                new1 = new Font(old1, old1.Style & ~FontStyle.Underline);
+            else
+                new1 = new Font(old1, old1.Style | FontStyle.Underline);
+
+            rtb.SelectionFont = new1;
+        }
+        public static void Italic(RichTextBox rtb)
+        {
+            Font new1, old1;
+            old1 = rtb.SelectionFont;
+            if (old1.Italic)
+                new1 = new Font(old1, old1.Style & ~FontStyle.Italic);
+            else
+                new1 = new Font(old1, old1.Style | FontStyle.Italic);
+
+            rtb.SelectionFont = new1;
         }
         #endregion
     }

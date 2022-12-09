@@ -36,7 +36,7 @@ namespace BoanoEs15_WordPad
         private void redotoolStripButton_Click(object sender, EventArgs e) => rtb.Redo();
         private void ripristinaToolStripMenuItem_Click(object sender, EventArgs e) => rtb.Redo();
         #endregion
-
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e) => CurrentDocument.New(rtb, this);
         private void IncollabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Paste();
         private void TagliabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Cut();
         private void CopiabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Copy();
@@ -46,5 +46,12 @@ namespace BoanoEs15_WordPad
         private void SaveAsbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.SaveAs(rtb, this);
         private void UndobarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Undo();
         private void RedobarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Redo();
+        private void FontStylebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickFont(rtb);
+        private void ForeColorbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickColor(rtb);
+        private void BackTextColorbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickBackColor(rtb);
+        private void BoldbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Bolderize(rtb);
+        private void ItalicbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Italic(rtb);
+        private void UnderlinebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Underline(rtb);
+        private void PageColorbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickPageColor(rtb);
     }
 }

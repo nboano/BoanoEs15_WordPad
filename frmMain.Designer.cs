@@ -85,6 +85,14 @@
             this.FontribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.InsertribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ImgribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.FontStylebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.ColorribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ForeColorbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.BackTextColorbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.BoldbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.ItalicbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.UnderlinebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.PageColorbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -376,9 +384,16 @@
             this.SalvaDocBarButtonItem,
             this.SaveAsbarButtonItem,
             this.UndobarButtonItem,
-            this.RedobarButtonItem});
+            this.RedobarButtonItem,
+            this.FontStylebarButtonItem,
+            this.ForeColorbarButtonItem,
+            this.BackTextColorbarButtonItem,
+            this.BoldbarButtonItem,
+            this.ItalicbarButtonItem,
+            this.UnderlinebarButtonItem,
+            this.PageColorbarButtonItem});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 12;
+            this.ribbonControl1.MaxItemId = 19;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.FileribbonPage,
@@ -415,7 +430,8 @@
             this.HomeribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.AppuntiribbonPageGroup,
             this.UndoRedoribbonPageGroup,
-            this.FontribbonPageGroup});
+            this.FontribbonPageGroup,
+            this.ColorribbonPageGroup});
             this.HomeribbonPage.Name = "HomeribbonPage";
             this.HomeribbonPage.Text = "Home";
             // 
@@ -548,6 +564,10 @@
             // 
             // FontribbonPageGroup
             // 
+            this.FontribbonPageGroup.ItemLinks.Add(this.FontStylebarButtonItem);
+            this.FontribbonPageGroup.ItemLinks.Add(this.BoldbarButtonItem);
+            this.FontribbonPageGroup.ItemLinks.Add(this.ItalicbarButtonItem);
+            this.FontribbonPageGroup.ItemLinks.Add(this.UnderlinebarButtonItem);
             this.FontribbonPageGroup.Name = "FontribbonPageGroup";
             this.FontribbonPageGroup.Text = "Carattere";
             // 
@@ -563,6 +583,71 @@
             this.ImgribbonPageGroup.Name = "ImgribbonPageGroup";
             this.ImgribbonPageGroup.Text = "Immagine";
             // 
+            // FontStylebarButtonItem
+            // 
+            this.FontStylebarButtonItem.Caption = "Carattere";
+            this.FontStylebarButtonItem.Id = 12;
+            this.FontStylebarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("FontStylebarButtonItem.ImageOptions.Image")));
+            this.FontStylebarButtonItem.Name = "FontStylebarButtonItem";
+            this.FontStylebarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.FontStylebarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.FontStylebarButtonItem_ItemClick);
+            // 
+            // ColorribbonPageGroup
+            // 
+            this.ColorribbonPageGroup.ItemLinks.Add(this.ForeColorbarButtonItem);
+            this.ColorribbonPageGroup.ItemLinks.Add(this.BackTextColorbarButtonItem);
+            this.ColorribbonPageGroup.ItemLinks.Add(this.PageColorbarButtonItem);
+            this.ColorribbonPageGroup.Name = "ColorribbonPageGroup";
+            this.ColorribbonPageGroup.Text = "Colore";
+            // 
+            // ForeColorbarButtonItem
+            // 
+            this.ForeColorbarButtonItem.Caption = "Testo";
+            this.ForeColorbarButtonItem.Id = 13;
+            this.ForeColorbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ForeColorbarButtonItem.ImageOptions.Image")));
+            this.ForeColorbarButtonItem.Name = "ForeColorbarButtonItem";
+            this.ForeColorbarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.ForeColorbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ForeColorbarButtonItem_ItemClick);
+            // 
+            // BackTextColorbarButtonItem
+            // 
+            this.BackTextColorbarButtonItem.Caption = "Sfondo";
+            this.BackTextColorbarButtonItem.Id = 14;
+            this.BackTextColorbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BackTextColorbarButtonItem.ImageOptions.Image")));
+            this.BackTextColorbarButtonItem.Name = "BackTextColorbarButtonItem";
+            this.BackTextColorbarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.BackTextColorbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BackTextColorbarButtonItem_ItemClick);
+            // 
+            // BoldbarButtonItem
+            // 
+            this.BoldbarButtonItem.Id = 15;
+            this.BoldbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BoldbarButtonItem.ImageOptions.Image")));
+            this.BoldbarButtonItem.Name = "BoldbarButtonItem";
+            this.BoldbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BoldbarButtonItem_ItemClick);
+            // 
+            // ItalicbarButtonItem
+            // 
+            this.ItalicbarButtonItem.Id = 16;
+            this.ItalicbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ItalicbarButtonItem.ImageOptions.Image")));
+            this.ItalicbarButtonItem.Name = "ItalicbarButtonItem";
+            this.ItalicbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ItalicbarButtonItem_ItemClick);
+            // 
+            // UnderlinebarButtonItem
+            // 
+            this.UnderlinebarButtonItem.Id = 17;
+            this.UnderlinebarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UnderlinebarButtonItem.ImageOptions.Image")));
+            this.UnderlinebarButtonItem.Name = "UnderlinebarButtonItem";
+            this.UnderlinebarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UnderlinebarButtonItem_ItemClick);
+            // 
+            // PageColorbarButtonItem
+            // 
+            this.PageColorbarButtonItem.Caption = "Pagina";
+            this.PageColorbarButtonItem.Id = 18;
+            this.PageColorbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("PageColorbarButtonItem.ImageOptions.Image")));
+            this.PageColorbarButtonItem.Name = "PageColorbarButtonItem";
+            this.PageColorbarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.PageColorbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.PageColorbarButtonItem_ItemClick);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -576,6 +661,7 @@
             this.Name = "frmMain";
             this.Ribbon = this.ribbonControl1;
             this.Text = "FlopPad 💀";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
@@ -642,6 +728,14 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup FontribbonPageGroup;
         private DevExpress.XtraBars.Ribbon.RibbonPage InsertribbonPage;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ImgribbonPageGroup;
+        private DevExpress.XtraBars.BarButtonItem FontStylebarButtonItem;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ColorribbonPageGroup;
+        private DevExpress.XtraBars.BarButtonItem ForeColorbarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem BackTextColorbarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem BoldbarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem ItalicbarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem UnderlinebarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem PageColorbarButtonItem;
     }
 }
 
