@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DevExpress.LookAndFeel;
+using DevExpress.Skins;
+using System;
 using System.Windows.Forms;
 using WordPad;
 
@@ -12,6 +14,7 @@ namespace BoanoEs15_WordPad
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
+            
             CurrentDocument.Modified = false;
             CurrentDocument.New(rtb, this);
             CurrentDocument.SetTemplate(rtb, Templates.Normale);
@@ -61,5 +64,10 @@ namespace BoanoEs15_WordPad
         #endregion
         private void TrovabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Find(rtb);
         private void TrovaSostbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Find(rtb, true);
+        private void TValentinebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => UserLookAndFeel.Default.SetSkinStyle(SkinStyle.Valentine);
+        private void T365barButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => UserLookAndFeel.Default.SetSkinStyle(SkinStyle.WXICompact);
+        private void THalloweenbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => UserLookAndFeel.Default.SetSkinStyle(SkinStyle.Pumpkin);
+
+        private void TNatalebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => UserLookAndFeel.Default.SetSkinStyle(SkinStyle.Xmas2008Blue);
     }
 }

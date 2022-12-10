@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -90,6 +91,16 @@
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.TrovabarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.TrovaSostbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.TemplateNormalebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.barStaticItem2 = new DevExpress.XtraBars.BarStaticItem();
+            this.skinDropDownButtonItem1 = new DevExpress.XtraBars.SkinDropDownButtonItem();
+            this.skinPaletteDropDownButtonItem1 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
+            this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.skinPaletteRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
+            this.skinRibbonGalleryBarItem2 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.TValentinebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.T365barButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.THalloweenbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.HomeribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.AppuntiribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.UndoRedoribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -97,15 +108,19 @@
             this.AlignmentribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ColorribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.FindribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.TemplateribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.FileribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.FGestribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.SalvaribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.InsertribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ImgribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.AspettoribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.TemaribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.lblParole = new System.Windows.Forms.Label();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.TNatalebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
@@ -415,14 +430,26 @@
             this.barStaticItem1,
             this.txtCerca,
             this.TrovabarButtonItem,
-            this.TrovaSostbarButtonItem});
+            this.TrovaSostbarButtonItem,
+            this.TemplateNormalebarButtonItem,
+            this.barStaticItem2,
+            this.skinDropDownButtonItem1,
+            this.skinPaletteDropDownButtonItem1,
+            this.skinRibbonGalleryBarItem1,
+            this.skinPaletteRibbonGalleryBarItem1,
+            this.skinRibbonGalleryBarItem2,
+            this.TValentinebarButtonItem,
+            this.T365barButtonItem,
+            this.THalloweenbarButtonItem,
+            this.TNatalebarButtonItem});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 28;
+            this.ribbonControl1.MaxItemId = 39;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.HomeribbonPage,
             this.FileribbonPage,
-            this.InsertribbonPage});
+            this.InsertribbonPage,
+            this.AspettoribbonPage});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTextEdit1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019;
@@ -651,6 +678,73 @@
             this.TrovaSostbarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.TrovaSostbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TrovaSostbarButtonItem_ItemClick);
             // 
+            // TemplateNormalebarButtonItem
+            // 
+            this.TemplateNormalebarButtonItem.Caption = "Normale";
+            this.TemplateNormalebarButtonItem.Id = 28;
+            this.TemplateNormalebarButtonItem.Name = "TemplateNormalebarButtonItem";
+            // 
+            // barStaticItem2
+            // 
+            this.barStaticItem2.Caption = "barStaticItem2";
+            this.barStaticItem2.Id = 29;
+            this.barStaticItem2.Name = "barStaticItem2";
+            // 
+            // skinDropDownButtonItem1
+            // 
+            this.skinDropDownButtonItem1.Id = 30;
+            this.skinDropDownButtonItem1.Name = "skinDropDownButtonItem1";
+            // 
+            // skinPaletteDropDownButtonItem1
+            // 
+            this.skinPaletteDropDownButtonItem1.Id = 31;
+            this.skinPaletteDropDownButtonItem1.Name = "skinPaletteDropDownButtonItem1";
+            // 
+            // skinRibbonGalleryBarItem1
+            // 
+            this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
+            this.skinRibbonGalleryBarItem1.Id = 32;
+            this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
+            // 
+            // skinPaletteRibbonGalleryBarItem1
+            // 
+            this.skinPaletteRibbonGalleryBarItem1.Caption = "skinPaletteRibbonGalleryBarItem1";
+            this.skinPaletteRibbonGalleryBarItem1.Id = 33;
+            this.skinPaletteRibbonGalleryBarItem1.Name = "skinPaletteRibbonGalleryBarItem1";
+            // 
+            // skinRibbonGalleryBarItem2
+            // 
+            this.skinRibbonGalleryBarItem2.Caption = "skinRibbonGalleryBarItem2";
+            this.skinRibbonGalleryBarItem2.Id = 34;
+            this.skinRibbonGalleryBarItem2.Name = "skinRibbonGalleryBarItem2";
+            // 
+            // TValentinebarButtonItem
+            // 
+            this.TValentinebarButtonItem.Caption = "San Valentino Pazzo";
+            this.TValentinebarButtonItem.Id = 35;
+            this.TValentinebarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TValentinebarButtonItem.ImageOptions.Image")));
+            this.TValentinebarButtonItem.Name = "TValentinebarButtonItem";
+            this.TValentinebarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.TValentinebarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TValentinebarButtonItem_ItemClick);
+            // 
+            // T365barButtonItem
+            // 
+            this.T365barButtonItem.Caption = "Office 365";
+            this.T365barButtonItem.Id = 36;
+            this.T365barButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("T365barButtonItem.ImageOptions.Image")));
+            this.T365barButtonItem.Name = "T365barButtonItem";
+            this.T365barButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.T365barButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.T365barButtonItem_ItemClick);
+            // 
+            // THalloweenbarButtonItem
+            // 
+            this.THalloweenbarButtonItem.Caption = "Alouin";
+            this.THalloweenbarButtonItem.Id = 37;
+            this.THalloweenbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("THalloweenbarButtonItem.ImageOptions.Image")));
+            this.THalloweenbarButtonItem.Name = "THalloweenbarButtonItem";
+            this.THalloweenbarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.THalloweenbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.THalloweenbarButtonItem_ItemClick);
+            // 
             // HomeribbonPage
             // 
             this.HomeribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -659,7 +753,8 @@
             this.FontribbonPageGroup,
             this.AlignmentribbonPageGroup,
             this.ColorribbonPageGroup,
-            this.FindribbonPageGroup});
+            this.FindribbonPageGroup,
+            this.TemplateribbonPageGroup});
             this.HomeribbonPage.Name = "HomeribbonPage";
             this.HomeribbonPage.Text = "Home";
             // 
@@ -710,6 +805,11 @@
             this.FindribbonPageGroup.Name = "FindribbonPageGroup";
             this.FindribbonPageGroup.Text = "Trova";
             // 
+            // TemplateribbonPageGroup
+            // 
+            this.TemplateribbonPageGroup.Name = "TemplateribbonPageGroup";
+            this.TemplateribbonPageGroup.Text = "Template Ecclesiastici";
+            // 
             // FileribbonPage
             // 
             this.FileribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -744,6 +844,22 @@
             this.ImgribbonPageGroup.Name = "ImgribbonPageGroup";
             this.ImgribbonPageGroup.Text = "Immagine";
             // 
+            // AspettoribbonPage
+            // 
+            this.AspettoribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.TemaribbonPageGroup});
+            this.AspettoribbonPage.Name = "AspettoribbonPage";
+            this.AspettoribbonPage.Text = "Aspetto";
+            // 
+            // TemaribbonPageGroup
+            // 
+            this.TemaribbonPageGroup.ItemLinks.Add(this.T365barButtonItem);
+            this.TemaribbonPageGroup.ItemLinks.Add(this.TValentinebarButtonItem);
+            this.TemaribbonPageGroup.ItemLinks.Add(this.THalloweenbarButtonItem);
+            this.TemaribbonPageGroup.ItemLinks.Add(this.TNatalebarButtonItem);
+            this.TemaribbonPageGroup.Name = "TemaribbonPageGroup";
+            this.TemaribbonPageGroup.Text = "Tema";
+            // 
             // fluentDesignFormContainer1
             // 
             this.fluentDesignFormContainer1.Controls.Add(this.lblParole);
@@ -776,6 +892,15 @@
             this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // TNatalebarButtonItem
+            // 
+            this.TNatalebarButtonItem.Caption = "Nahahahtale";
+            this.TNatalebarButtonItem.Id = 38;
+            this.TNatalebarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TNatalebarButtonItem.ImageOptions.Image")));
+            this.TNatalebarButtonItem.Name = "TNatalebarButtonItem";
+            this.TNatalebarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.TNatalebarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TNatalebarButtonItem_ItemClick);
             // 
             // frmMain
             // 
@@ -882,6 +1007,20 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
         private DevExpress.XtraBars.BarButtonItem TrovabarButtonItem;
         private DevExpress.XtraBars.BarButtonItem TrovaSostbarButtonItem;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup TemplateribbonPageGroup;
+        private DevExpress.XtraBars.BarButtonItem TemplateNormalebarButtonItem;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem2;
+        private DevExpress.XtraBars.SkinDropDownButtonItem skinDropDownButtonItem1;
+        private DevExpress.XtraBars.SkinPaletteDropDownButtonItem skinPaletteDropDownButtonItem1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage AspettoribbonPage;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup TemaribbonPageGroup;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
+        private DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem skinPaletteRibbonGalleryBarItem1;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem2;
+        private DevExpress.XtraBars.BarButtonItem TValentinebarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem T365barButtonItem;
+        private DevExpress.XtraBars.BarButtonItem THalloweenbarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem TNatalebarButtonItem;
     }
 }
 
