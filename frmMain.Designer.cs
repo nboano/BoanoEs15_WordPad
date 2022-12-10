@@ -89,6 +89,7 @@
             this.txtCerca = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.TrovabarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.TrovaSostbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.HomeribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.AppuntiribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.UndoRedoribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -105,7 +106,6 @@
             this.lblParole = new System.Windows.Forms.Label();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.TrovaSostbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
@@ -642,6 +642,15 @@
             this.TrovabarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.TrovabarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TrovabarButtonItem_ItemClick);
             // 
+            // TrovaSostbarButtonItem
+            // 
+            this.TrovaSostbarButtonItem.Caption = "Trova e sostituisci";
+            this.TrovaSostbarButtonItem.Id = 27;
+            this.TrovaSostbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TrovaSostbarButtonItem.ImageOptions.Image")));
+            this.TrovaSostbarButtonItem.Name = "TrovaSostbarButtonItem";
+            this.TrovaSostbarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.TrovaSostbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TrovaSostbarButtonItem_ItemClick);
+            // 
             // HomeribbonPage
             // 
             this.HomeribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -767,15 +776,6 @@
             this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // TrovaSostbarButtonItem
-            // 
-            this.TrovaSostbarButtonItem.Caption = "Trova e sostituisci";
-            this.TrovaSostbarButtonItem.Id = 27;
-            this.TrovaSostbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TrovaSostbarButtonItem.ImageOptions.Image")));
-            this.TrovaSostbarButtonItem.Name = "TrovaSostbarButtonItem";
-            this.TrovaSostbarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.TrovaSostbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TrovaSostbarButtonItem_ItemClick);
             // 
             // frmMain
             // 
