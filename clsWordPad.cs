@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using static System.Net.WebRequestMethods;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
+using Microsoft.VisualBasic;
 
 namespace WordPad
 {
@@ -53,10 +51,11 @@ namespace WordPad
         }
         #endregion
         #region METODI PUBBLICI
-        public static void TextModified(Form f)
+        public static void TextModified(Form f, Control cntParole, RichTextBox rtb)
         {
             Modified = true;
             if (f.Text[0] != '*') f.Text = "* - " + f.Text;
+            cntParole.Text = $"{rtb.Text.Split(' ').Length} parole💀";
         }
         public static void New(RichTextBox rtb, Form f)
         {
@@ -192,6 +191,36 @@ namespace WordPad
                 Clipboard.SetImage(image);
                 rtb.Paste();
             }
+        }
+        public static void Find(RichTextBox rtb, bool replace = false)
+        {
+            string replaceWith = null;
+            string word = Interaction.InputBox("Inserisci testo da cercare", "Trova");
+            if (string.IsNullOrEmpty(word)) return;
+
+            if (replace)
+            {
+                replaceWith = Interaction.InputBox("Inserisci testo sostitutivo", "Sostituisci");
+                if (string.IsNullOrEmpty(replaceWith)) return;
+            }
+
+            int s_start = rtb.SelectionStart, startIndex = 0, index;
+            int cnt = 0;
+
+            while ((index = rtb.Text.IndexOf(word, startIndex)) != -1)
+            {
+                rtb.Select(index, word.Length);
+                rtb.SelectionBackColor = Color.Yellow;
+                if(replaceWith!= null)
+                    rtb.SelectedText = replaceWith;
+                startIndex = index + word.Length;
+                cnt++;
+            }
+            rtb.SelectionStart = 0;
+            rtb.SelectionLength = rtb.TextLength;
+            rtb.SelectionColor = Color.Black;
+
+            MessageBox.Show($"{cnt} occorrenze trovate {(replace ? "e sostituite" : "")}.");
         }
         public static void SetTemplate(RichTextBox rtb, (Font, Color) template)
         {

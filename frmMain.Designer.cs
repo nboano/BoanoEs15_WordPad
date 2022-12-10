@@ -65,28 +65,15 @@
             this.SalvaBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.NuovobarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.IncollabarButtonItem = new DevExpress.XtraBars.BarButtonItem();
-            this.HomeribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.AppuntiribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.TagliabarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.CopiabarButtonItem = new DevExpress.XtraBars.BarButtonItem();
-            this.FileribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.FGestribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.NuovoDocButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.ApribarButtonItem = new DevExpress.XtraBars.BarButtonItem();
-            this.SalvaribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.SalvaDocBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.SaveAsbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
-            this.UndoRedoribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.UndobarButtonItem = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.RedobarButtonItem = new DevExpress.XtraBars.BarButtonItem();
-            this.FontribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.InsertribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ImgribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.FontStylebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
-            this.ColorribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ForeColorbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.BackTextColorbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.BoldbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
@@ -94,13 +81,35 @@
             this.UnderlinebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.PageColorbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.ImgFromFilebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
-            this.AlignmentribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.AlignSXbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.AlignCenterbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.AlignDXbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.ElPuntatobarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
+            this.txtCerca = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.TrovabarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.HomeribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.AppuntiribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.UndoRedoribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.FontribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.AlignmentribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ColorribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.FindribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.FileribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.FGestribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.SalvaribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.InsertribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ImgribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
+            this.lblParole = new System.Windows.Forms.Label();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.TrovaSostbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
+            this.fluentDesignFormContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip
@@ -239,7 +248,7 @@
             this.annullaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("annullaToolStripMenuItem.Image")));
             this.annullaToolStripMenuItem.Name = "annullaToolStripMenuItem";
             this.annullaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.annullaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.annullaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.annullaToolStripMenuItem.Text = "&Annulla";
             this.annullaToolStripMenuItem.Click += new System.EventHandler(this.annullaToolStripMenuItem_Click);
             // 
@@ -248,14 +257,14 @@
             this.ripristinaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ripristinaToolStripMenuItem.Image")));
             this.ripristinaToolStripMenuItem.Name = "ripristinaToolStripMenuItem";
             this.ripristinaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.ripristinaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ripristinaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.ripristinaToolStripMenuItem.Text = "&Ripristina";
             this.ripristinaToolStripMenuItem.Click += new System.EventHandler(this.ripristinaToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(169, 6);
             // 
             // tagliaToolStripMenuItem
             // 
@@ -263,7 +272,7 @@
             this.tagliaToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tagliaToolStripMenuItem.Name = "tagliaToolStripMenuItem";
             this.tagliaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.tagliaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tagliaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.tagliaToolStripMenuItem.Text = "&Taglia";
             this.tagliaToolStripMenuItem.Click += new System.EventHandler(this.tagliaToolStripMenuItem_Click);
             // 
@@ -273,7 +282,7 @@
             this.copiaToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copiaToolStripMenuItem.Name = "copiaToolStripMenuItem";
             this.copiaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.copiaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.copiaToolStripMenuItem.Text = "&Copia";
             this.copiaToolStripMenuItem.Click += new System.EventHandler(this.copiaToolStripMenuItem_Click);
             // 
@@ -283,19 +292,19 @@
             this.incollaToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.incollaToolStripMenuItem.Name = "incollaToolStripMenuItem";
             this.incollaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.incollaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.incollaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.incollaToolStripMenuItem.Text = "&Incolla";
             this.incollaToolStripMenuItem.Click += new System.EventHandler(this.incollaToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(169, 6);
             // 
             // selezionatuttoToolStripMenuItem
             // 
             this.selezionatuttoToolStripMenuItem.Name = "selezionatuttoToolStripMenuItem";
-            this.selezionatuttoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.selezionatuttoToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.selezionatuttoToolStripMenuItem.Text = "Seleziona &tutto";
             // 
             // strumentiToolStripMenuItem
@@ -310,13 +319,13 @@
             // personalizzaToolStripMenuItem
             // 
             this.personalizzaToolStripMenuItem.Name = "personalizzaToolStripMenuItem";
-            this.personalizzaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personalizzaToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.personalizzaToolStripMenuItem.Text = "&Personalizza";
             // 
             // opzioniToolStripMenuItem
             // 
             this.opzioniToolStripMenuItem.Name = "opzioniToolStripMenuItem";
-            this.opzioniToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.opzioniToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.opzioniToolStripMenuItem.Text = "&Opzioni";
             // 
             // ToolStripMenuItem
@@ -334,30 +343,30 @@
             // sommarioToolStripMenuItem
             // 
             this.sommarioToolStripMenuItem.Name = "sommarioToolStripMenuItem";
-            this.sommarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sommarioToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.sommarioToolStripMenuItem.Text = "&Sommario";
             // 
             // indiceToolStripMenuItem
             // 
             this.indiceToolStripMenuItem.Name = "indiceToolStripMenuItem";
-            this.indiceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.indiceToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.indiceToolStripMenuItem.Text = "&Indice";
             // 
             // cercaToolStripMenuItem
             // 
             this.cercaToolStripMenuItem.Name = "cercaToolStripMenuItem";
-            this.cercaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cercaToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.cercaToolStripMenuItem.Text = "&Cerca";
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(162, 6);
             // 
             // informazionisuToolStripMenuItem
             // 
             this.informazionisuToolStripMenuItem.Name = "informazionisuToolStripMenuItem";
-            this.informazionisuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.informazionisuToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.informazionisuToolStripMenuItem.Text = "&Informazioni su...";
             // 
             // rtb
@@ -402,14 +411,20 @@
             this.AlignSXbarButtonItem,
             this.AlignCenterbarButtonItem,
             this.AlignDXbarButtonItem,
-            this.ElPuntatobarButtonItem});
+            this.ElPuntatobarButtonItem,
+            this.barStaticItem1,
+            this.txtCerca,
+            this.TrovabarButtonItem,
+            this.TrovaSostbarButtonItem});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 24;
+            this.ribbonControl1.MaxItemId = 28;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.HomeribbonPage,
             this.FileribbonPage,
             this.InsertribbonPage});
+            this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemTextEdit1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019;
             this.ribbonControl1.Size = new System.Drawing.Size(1319, 170);
             // 
@@ -436,33 +451,6 @@
             this.IncollabarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.IncollabarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.IncollabarButtonItem_ItemClick);
             // 
-            // HomeribbonPage
-            // 
-            this.HomeribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.AppuntiribbonPageGroup,
-            this.UndoRedoribbonPageGroup,
-            this.FontribbonPageGroup,
-            this.AlignmentribbonPageGroup,
-            this.ColorribbonPageGroup});
-            this.HomeribbonPage.Name = "HomeribbonPage";
-            this.HomeribbonPage.Text = "Home";
-            // 
-            // AppuntiribbonPageGroup
-            // 
-            this.AppuntiribbonPageGroup.ItemLinks.Add(this.IncollabarButtonItem);
-            this.AppuntiribbonPageGroup.ItemLinks.Add(this.TagliabarButtonItem);
-            this.AppuntiribbonPageGroup.ItemLinks.Add(this.CopiabarButtonItem);
-            this.AppuntiribbonPageGroup.Name = "AppuntiribbonPageGroup";
-            this.AppuntiribbonPageGroup.Text = "Appunti";
-            // 
-            // fluentDesignFormContainer1
-            // 
-            this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(0, 170);
-            this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(1319, 514);
-            this.fluentDesignFormContainer1.TabIndex = 4;
-            // 
             // TagliabarButtonItem
             // 
             this.TagliabarButtonItem.Id = 4;
@@ -476,20 +464,6 @@
             this.CopiabarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("CopiabarButtonItem.ImageOptions.Image")));
             this.CopiabarButtonItem.Name = "CopiabarButtonItem";
             this.CopiabarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.CopiabarButtonItem_ItemClick);
-            // 
-            // FileribbonPage
-            // 
-            this.FileribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.FGestribbonPageGroup,
-            this.SalvaribbonPageGroup});
-            this.FileribbonPage.Name = "FileribbonPage";
-            this.FileribbonPage.Text = "File";
-            // 
-            // FGestribbonPageGroup
-            // 
-            this.FGestribbonPageGroup.ItemLinks.Add(this.NuovoDocButtonItem);
-            this.FGestribbonPageGroup.ItemLinks.Add(this.ApribarButtonItem);
-            this.FGestribbonPageGroup.Name = "FGestribbonPageGroup";
             // 
             // NuovoDocButtonItem
             // 
@@ -509,13 +483,6 @@
             this.ApribarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.ApribarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ApribarButtonItem_ItemClick);
             // 
-            // SalvaribbonPageGroup
-            // 
-            this.SalvaribbonPageGroup.ItemLinks.Add(this.SalvaDocBarButtonItem);
-            this.SalvaribbonPageGroup.ItemLinks.Add(this.SaveAsbarButtonItem);
-            this.SalvaribbonPageGroup.Name = "SalvaribbonPageGroup";
-            this.SalvaribbonPageGroup.Text = "Salva il documento";
-            // 
             // SalvaDocBarButtonItem
             // 
             this.SalvaDocBarButtonItem.Caption = "Salva";
@@ -534,12 +501,6 @@
             this.SaveAsbarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.SaveAsbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.SaveAsbarButtonItem_ItemClick);
             // 
-            // UndoRedoribbonPageGroup
-            // 
-            this.UndoRedoribbonPageGroup.ItemLinks.Add(this.UndobarButtonItem);
-            this.UndoRedoribbonPageGroup.ItemLinks.Add(this.RedobarButtonItem);
-            this.UndoRedoribbonPageGroup.Name = "UndoRedoribbonPageGroup";
-            // 
             // UndobarButtonItem
             // 
             this.UndobarButtonItem.Caption = "Annulla";
@@ -548,22 +509,6 @@
             this.UndobarButtonItem.Name = "UndobarButtonItem";
             this.UndobarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.UndobarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UndobarButtonItem_ItemClick);
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Annulla";
-            this.barButtonItem1.Id = 10;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Annulla";
-            this.barButtonItem2.Id = 10;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // RedobarButtonItem
             // 
@@ -574,28 +519,6 @@
             this.RedobarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.RedobarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.RedobarButtonItem_ItemClick);
             // 
-            // FontribbonPageGroup
-            // 
-            this.FontribbonPageGroup.ItemLinks.Add(this.FontStylebarButtonItem);
-            this.FontribbonPageGroup.ItemLinks.Add(this.BoldbarButtonItem);
-            this.FontribbonPageGroup.ItemLinks.Add(this.ItalicbarButtonItem);
-            this.FontribbonPageGroup.ItemLinks.Add(this.UnderlinebarButtonItem);
-            this.FontribbonPageGroup.Name = "FontribbonPageGroup";
-            this.FontribbonPageGroup.Text = "Carattere";
-            // 
-            // InsertribbonPage
-            // 
-            this.InsertribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ImgribbonPageGroup});
-            this.InsertribbonPage.Name = "InsertribbonPage";
-            this.InsertribbonPage.Text = "Inserisci";
-            // 
-            // ImgribbonPageGroup
-            // 
-            this.ImgribbonPageGroup.ItemLinks.Add(this.ImgFromFilebarButtonItem);
-            this.ImgribbonPageGroup.Name = "ImgribbonPageGroup";
-            this.ImgribbonPageGroup.Text = "Immagine";
-            // 
             // FontStylebarButtonItem
             // 
             this.FontStylebarButtonItem.Caption = "Carattere";
@@ -604,14 +527,6 @@
             this.FontStylebarButtonItem.Name = "FontStylebarButtonItem";
             this.FontStylebarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.FontStylebarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.FontStylebarButtonItem_ItemClick);
-            // 
-            // ColorribbonPageGroup
-            // 
-            this.ColorribbonPageGroup.ItemLinks.Add(this.ForeColorbarButtonItem);
-            this.ColorribbonPageGroup.ItemLinks.Add(this.BackTextColorbarButtonItem);
-            this.ColorribbonPageGroup.ItemLinks.Add(this.PageColorbarButtonItem);
-            this.ColorribbonPageGroup.Name = "ColorribbonPageGroup";
-            this.ColorribbonPageGroup.Text = "Colore";
             // 
             // ForeColorbarButtonItem
             // 
@@ -670,15 +585,6 @@
             this.ImgFromFilebarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.ImgFromFilebarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ImgFromFilebarButtonItem_ItemClick);
             // 
-            // AlignmentribbonPageGroup
-            // 
-            this.AlignmentribbonPageGroup.ItemLinks.Add(this.AlignSXbarButtonItem);
-            this.AlignmentribbonPageGroup.ItemLinks.Add(this.AlignCenterbarButtonItem);
-            this.AlignmentribbonPageGroup.ItemLinks.Add(this.AlignDXbarButtonItem);
-            this.AlignmentribbonPageGroup.ItemLinks.Add(this.ElPuntatobarButtonItem);
-            this.AlignmentribbonPageGroup.Name = "AlignmentribbonPageGroup";
-            this.AlignmentribbonPageGroup.Text = "Allineamento";
-            // 
             // AlignSXbarButtonItem
             // 
             this.AlignSXbarButtonItem.Id = 20;
@@ -709,6 +615,168 @@
             this.ElPuntatobarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.ElPuntatobarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ElPuntatobarButtonItem_ItemClick);
             // 
+            // barStaticItem1
+            // 
+            this.barStaticItem1.Caption = "barStaticItem1";
+            this.barStaticItem1.Id = 24;
+            this.barStaticItem1.Name = "barStaticItem1";
+            // 
+            // txtCerca
+            // 
+            this.txtCerca.Edit = this.repositoryItemTextEdit1;
+            this.txtCerca.Id = 25;
+            this.txtCerca.Name = "txtCerca";
+            this.txtCerca.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText;
+            // 
+            // repositoryItemTextEdit1
+            // 
+            this.repositoryItemTextEdit1.AutoHeight = false;
+            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
+            // 
+            // TrovabarButtonItem
+            // 
+            this.TrovabarButtonItem.Caption = "Trova";
+            this.TrovabarButtonItem.Id = 26;
+            this.TrovabarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TrovabarButtonItem.ImageOptions.Image")));
+            this.TrovabarButtonItem.Name = "TrovabarButtonItem";
+            this.TrovabarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.TrovabarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TrovabarButtonItem_ItemClick);
+            // 
+            // HomeribbonPage
+            // 
+            this.HomeribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.AppuntiribbonPageGroup,
+            this.UndoRedoribbonPageGroup,
+            this.FontribbonPageGroup,
+            this.AlignmentribbonPageGroup,
+            this.ColorribbonPageGroup,
+            this.FindribbonPageGroup});
+            this.HomeribbonPage.Name = "HomeribbonPage";
+            this.HomeribbonPage.Text = "Home";
+            // 
+            // AppuntiribbonPageGroup
+            // 
+            this.AppuntiribbonPageGroup.ItemLinks.Add(this.IncollabarButtonItem);
+            this.AppuntiribbonPageGroup.ItemLinks.Add(this.TagliabarButtonItem);
+            this.AppuntiribbonPageGroup.ItemLinks.Add(this.CopiabarButtonItem);
+            this.AppuntiribbonPageGroup.Name = "AppuntiribbonPageGroup";
+            this.AppuntiribbonPageGroup.Text = "Appunti";
+            // 
+            // UndoRedoribbonPageGroup
+            // 
+            this.UndoRedoribbonPageGroup.ItemLinks.Add(this.UndobarButtonItem);
+            this.UndoRedoribbonPageGroup.ItemLinks.Add(this.RedobarButtonItem);
+            this.UndoRedoribbonPageGroup.Name = "UndoRedoribbonPageGroup";
+            // 
+            // FontribbonPageGroup
+            // 
+            this.FontribbonPageGroup.ItemLinks.Add(this.FontStylebarButtonItem);
+            this.FontribbonPageGroup.ItemLinks.Add(this.BoldbarButtonItem);
+            this.FontribbonPageGroup.ItemLinks.Add(this.ItalicbarButtonItem);
+            this.FontribbonPageGroup.ItemLinks.Add(this.UnderlinebarButtonItem);
+            this.FontribbonPageGroup.Name = "FontribbonPageGroup";
+            this.FontribbonPageGroup.Text = "Carattere";
+            // 
+            // AlignmentribbonPageGroup
+            // 
+            this.AlignmentribbonPageGroup.ItemLinks.Add(this.AlignSXbarButtonItem);
+            this.AlignmentribbonPageGroup.ItemLinks.Add(this.AlignCenterbarButtonItem);
+            this.AlignmentribbonPageGroup.ItemLinks.Add(this.AlignDXbarButtonItem);
+            this.AlignmentribbonPageGroup.ItemLinks.Add(this.ElPuntatobarButtonItem);
+            this.AlignmentribbonPageGroup.Name = "AlignmentribbonPageGroup";
+            this.AlignmentribbonPageGroup.Text = "Allineamento";
+            // 
+            // ColorribbonPageGroup
+            // 
+            this.ColorribbonPageGroup.ItemLinks.Add(this.ForeColorbarButtonItem);
+            this.ColorribbonPageGroup.ItemLinks.Add(this.BackTextColorbarButtonItem);
+            this.ColorribbonPageGroup.ItemLinks.Add(this.PageColorbarButtonItem);
+            this.ColorribbonPageGroup.Name = "ColorribbonPageGroup";
+            this.ColorribbonPageGroup.Text = "Colore";
+            // 
+            // FindribbonPageGroup
+            // 
+            this.FindribbonPageGroup.ItemLinks.Add(this.TrovabarButtonItem);
+            this.FindribbonPageGroup.ItemLinks.Add(this.TrovaSostbarButtonItem);
+            this.FindribbonPageGroup.Name = "FindribbonPageGroup";
+            this.FindribbonPageGroup.Text = "Trova";
+            // 
+            // FileribbonPage
+            // 
+            this.FileribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.FGestribbonPageGroup,
+            this.SalvaribbonPageGroup});
+            this.FileribbonPage.Name = "FileribbonPage";
+            this.FileribbonPage.Text = "File";
+            // 
+            // FGestribbonPageGroup
+            // 
+            this.FGestribbonPageGroup.ItemLinks.Add(this.NuovoDocButtonItem);
+            this.FGestribbonPageGroup.ItemLinks.Add(this.ApribarButtonItem);
+            this.FGestribbonPageGroup.Name = "FGestribbonPageGroup";
+            // 
+            // SalvaribbonPageGroup
+            // 
+            this.SalvaribbonPageGroup.ItemLinks.Add(this.SalvaDocBarButtonItem);
+            this.SalvaribbonPageGroup.ItemLinks.Add(this.SaveAsbarButtonItem);
+            this.SalvaribbonPageGroup.Name = "SalvaribbonPageGroup";
+            this.SalvaribbonPageGroup.Text = "Salva il documento";
+            // 
+            // InsertribbonPage
+            // 
+            this.InsertribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ImgribbonPageGroup});
+            this.InsertribbonPage.Name = "InsertribbonPage";
+            this.InsertribbonPage.Text = "Inserisci";
+            // 
+            // ImgribbonPageGroup
+            // 
+            this.ImgribbonPageGroup.ItemLinks.Add(this.ImgFromFilebarButtonItem);
+            this.ImgribbonPageGroup.Name = "ImgribbonPageGroup";
+            this.ImgribbonPageGroup.Text = "Immagine";
+            // 
+            // fluentDesignFormContainer1
+            // 
+            this.fluentDesignFormContainer1.Controls.Add(this.lblParole);
+            this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(0, 170);
+            this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(1319, 514);
+            this.fluentDesignFormContainer1.TabIndex = 4;
+            // 
+            // lblParole
+            // 
+            this.lblParole.AutoSize = true;
+            this.lblParole.Location = new System.Drawing.Point(3, 492);
+            this.lblParole.Name = "lblParole";
+            this.lblParole.Size = new System.Drawing.Size(0, 13);
+            this.lblParole.TabIndex = 6;
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Annulla";
+            this.barButtonItem1.Id = 10;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Annulla";
+            this.barButtonItem2.Id = 10;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // TrovaSostbarButtonItem
+            // 
+            this.TrovaSostbarButtonItem.Caption = "Trova e sostituisci";
+            this.TrovaSostbarButtonItem.Id = 27;
+            this.TrovaSostbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TrovaSostbarButtonItem.ImageOptions.Image")));
+            this.TrovaSostbarButtonItem.Name = "TrovaSostbarButtonItem";
+            this.TrovaSostbarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.TrovaSostbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TrovaSostbarButtonItem_ItemClick);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -718,6 +786,7 @@
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.ribbonControl1);
+            this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Glow;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "frmMain";
             this.Ribbon = this.ribbonControl1;
@@ -727,6 +796,9 @@
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
+            this.fluentDesignFormContainer1.ResumeLayout(false);
+            this.fluentDesignFormContainer1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -803,6 +875,13 @@
         private DevExpress.XtraBars.BarButtonItem AlignCenterbarButtonItem;
         private DevExpress.XtraBars.BarButtonItem AlignDXbarButtonItem;
         private DevExpress.XtraBars.BarButtonItem ElPuntatobarButtonItem;
+        private System.Windows.Forms.Label lblParole;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup FindribbonPageGroup;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem1;
+        private DevExpress.XtraBars.BarEditItem txtCerca;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
+        private DevExpress.XtraBars.BarButtonItem TrovabarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem TrovaSostbarButtonItem;
     }
 }
 

@@ -17,7 +17,7 @@ namespace BoanoEs15_WordPad
             CurrentDocument.SetTemplate(rtb, Templates.Normale);
         }
         #region HANDLERS
-        private void rtb_TextChanged(object sender, EventArgs e) => CurrentDocument.TextModified(this);
+        private void rtb_TextChanged(object sender, EventArgs e) => CurrentDocument.TextModified(this, lblParole, rtb);
         private void esciToolStripMenuItem_Click(object sender, EventArgs e) => Close();
         private void salvaToolStripButton_Click(object sender, EventArgs e) => CurrentDocument.Save(rtb, this);
         private void salvaToolStripMenuItem_Click(object sender, EventArgs e) => CurrentDocument.Save(rtb, this);
@@ -36,7 +36,6 @@ namespace BoanoEs15_WordPad
         private void annullaToolStripMenuItem_Click(object sender, EventArgs e) => rtb.Undo();
         private void redotoolStripButton_Click(object sender, EventArgs e) => rtb.Redo();
         private void ripristinaToolStripMenuItem_Click(object sender, EventArgs e) => rtb.Redo();
-        #endregion
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e) => CurrentDocument.New(rtb, this);
         private void IncollabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Paste();
         private void TagliabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Cut();
@@ -59,5 +58,8 @@ namespace BoanoEs15_WordPad
         private void AlignCenterbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.SelectionAlignment = HorizontalAlignment.Center;
         private void AlignDXbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.SelectionAlignment = HorizontalAlignment.Right;
         private void ElPuntatobarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.SelectionBullet = !rtb.SelectionBullet;
+        #endregion
+        private void TrovabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Find(rtb);
+        private void TrovaSostbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Find(rtb, true);
     }
 }
