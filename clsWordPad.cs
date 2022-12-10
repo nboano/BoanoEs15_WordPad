@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using Microsoft.VisualBasic;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace WordPad
 {
@@ -192,6 +193,12 @@ namespace WordPad
                 rtb.Paste();
             }
         }
+        public static void InsertImageFromPath(RichTextBox rtb, string fpath)
+        {
+            var image = Image.FromFile(fpath);
+            Clipboard.SetImage(image);
+            rtb.Paste();
+        }
         public static void Find(RichTextBox rtb, bool replace = false)
         {
             string replaceWith = null;
@@ -232,5 +239,7 @@ namespace WordPad
     public static class Templates
     {
         public static (Font, Color) Normale = (new Font("Arial", 11, FontStyle.Regular), Color.Black);
+        public static (Font, Color) Titolo1 = (new Font("Arial", 36, FontStyle.Bold), Color.Blue);
+        public static (Font, Color) TitoloNatale = (new Font("Blackadder ITC", 24, FontStyle.Bold), Color.DarkRed);
     }
 }

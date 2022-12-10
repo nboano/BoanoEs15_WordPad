@@ -67,7 +67,12 @@ namespace BoanoEs15_WordPad
         private void TValentinebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => UserLookAndFeel.Default.SetSkinStyle(SkinStyle.Valentine);
         private void T365barButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => UserLookAndFeel.Default.SetSkinStyle(SkinStyle.WXICompact);
         private void THalloweenbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => UserLookAndFeel.Default.SetSkinStyle(SkinStyle.Pumpkin);
-
         private void TNatalebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => UserLookAndFeel.Default.SetSkinStyle(SkinStyle.Xmas2008Blue);
+        private void TmNormalebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.SetTemplate(rtb, Templates.Normale);
+        private void Titolo1barButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.SetTemplate(rtb, Templates.Titolo1);
+        private void TmplNatalebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
+            CurrentDocument.InsertImageFromPath(rtb, @"../../img/tema-natale.png");
+            CurrentDocument.SetTemplate(rtb, Templates.TitoloNatale);
+        } 
     }
 }
