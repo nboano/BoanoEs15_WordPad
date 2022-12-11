@@ -1,5 +1,4 @@
 ﻿using DevExpress.LookAndFeel;
-using DevExpress.Skins;
 using System;
 using System.Windows.Forms;
 using WordPad;
@@ -16,19 +15,22 @@ namespace BoanoEs15_WordPad
         {
             
             CurrentDocument.Modified = false;
-            CurrentDocument.New(rtb, this);
-            CurrentDocument.SetTemplate(rtb, Templates.Normale);
+            CurrentDocument.ActiveForm = this;
+            CurrentDocument.ActiveRTB = rtb;
+            CurrentDocument.New();
+            CurrentDocument.SetTemplate(Templates.Normale);
+            PrintHelper.SetPrintParameters(rtb);
         }
         #region HANDLERS
-        private void rtb_TextChanged(object sender, EventArgs e) => CurrentDocument.TextModified(this, lblParole, rtb);
+        private void rtb_TextChanged(object sender, EventArgs e) => CurrentDocument.TextModified(lblParole);
         private void esciToolStripMenuItem_Click(object sender, EventArgs e) => Close();
-        private void salvaToolStripButton_Click(object sender, EventArgs e) => CurrentDocument.Save(rtb, this);
-        private void salvaToolStripMenuItem_Click(object sender, EventArgs e) => CurrentDocument.Save(rtb, this);
-        private void apriToolStripMenuItem_Click(object sender, EventArgs e) => CurrentDocument.Open(rtb, this);
-        private void apriToolStripButton_Click(object sender, EventArgs e) => CurrentDocument.Open(rtb, this);
-        private void salvaconnomeToolStripMenuItem_Click(object sender, EventArgs e) => CurrentDocument.SaveAs(rtb, this);
-        private void nuovoToolStripButton_Click(object sender, EventArgs e) => CurrentDocument.New(rtb, this);
-        private void nuovoToolStripMenuItem_Click(object sender, EventArgs e) => CurrentDocument.New(rtb, this);
+        private void salvaToolStripButton_Click(object sender, EventArgs e) => CurrentDocument.Save();
+        private void salvaToolStripMenuItem_Click(object sender, EventArgs e) => CurrentDocument.Save();
+        private void apriToolStripMenuItem_Click(object sender, EventArgs e) => CurrentDocument.Open();
+        private void apriToolStripButton_Click(object sender, EventArgs e) => CurrentDocument.Open();
+        private void salvaconnomeToolStripMenuItem_Click(object sender, EventArgs e) => CurrentDocument.SaveAs();
+        private void nuovoToolStripButton_Click(object sender, EventArgs e) => CurrentDocument.New();
+        private void nuovoToolStripMenuItem_Click(object sender, EventArgs e) => CurrentDocument.New();
         private void tagliaToolStripButton_Click(object sender, EventArgs e) => rtb.Cut();
         private void tagliaToolStripMenuItem_Click(object sender, EventArgs e) => rtb.Cut();
         private void copiaToolStripButton_Click(object sender, EventArgs e) => rtb.Copy();
@@ -39,40 +41,43 @@ namespace BoanoEs15_WordPad
         private void annullaToolStripMenuItem_Click(object sender, EventArgs e) => rtb.Undo();
         private void redotoolStripButton_Click(object sender, EventArgs e) => rtb.Redo();
         private void ripristinaToolStripMenuItem_Click(object sender, EventArgs e) => rtb.Redo();
-        private void frmMain_FormClosing(object sender, FormClosingEventArgs e) => CurrentDocument.New(rtb, this);
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e) => CurrentDocument.New();
         private void IncollabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Paste();
         private void TagliabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Cut();
         private void CopiabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Copy();
-        private void NuovoDocButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.New(rtb, this);
-        private void ApribarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Open(rtb, this);
-        private void SalvaDocBarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Save(rtb, this);
-        private void SaveAsbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.SaveAs(rtb, this);
+        private void NuovoDocButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.New();
+        private void ApribarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Open();
+        private void SalvaDocBarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Save();
+        private void SaveAsbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.SaveAs();
         private void UndobarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Undo();
         private void RedobarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.Redo();
-        private void FontStylebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickFont(rtb);
-        private void ForeColorbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickColor(rtb);
-        private void BackTextColorbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickBackColor(rtb);
-        private void BoldbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Bolderize(rtb);
-        private void ItalicbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Italic(rtb);
-        private void UnderlinebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Underline(rtb);
-        private void PageColorbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickPageColor(rtb);
-        private void ImgFromFilebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.InsertImageFromFile(rtb);
+        private void FontStylebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickFont();
+        private void ForeColorbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickColor();
+        private void BackTextColorbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickBackColor();
+        private void BoldbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Bolderize();
+        private void ItalicbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Italic();
+        private void UnderlinebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Underline();
+        private void PageColorbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.PickPageColor();
+        private void ImgFromFilebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.InsertImageFromFile();
         private void AlignSXbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.SelectionAlignment = HorizontalAlignment.Left;
         private void AlignCenterbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.SelectionAlignment = HorizontalAlignment.Center;
         private void AlignDXbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.SelectionAlignment = HorizontalAlignment.Right;
         private void ElPuntatobarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => rtb.SelectionBullet = !rtb.SelectionBullet;
         #endregion
-        private void TrovabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Find(rtb);
-        private void TrovaSostbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Find(rtb, true);
+        private void TrovabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Find();
+        private void TrovaSostbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.Find(true);
         private void TValentinebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => UserLookAndFeel.Default.SetSkinStyle(SkinStyle.Valentine);
         private void T365barButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => UserLookAndFeel.Default.SetSkinStyle(SkinStyle.WXICompact);
         private void THalloweenbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => UserLookAndFeel.Default.SetSkinStyle(SkinStyle.Pumpkin);
         private void TNatalebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => UserLookAndFeel.Default.SetSkinStyle(SkinStyle.Xmas2008Blue);
-        private void TmNormalebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.SetTemplate(rtb, Templates.Normale);
-        private void Titolo1barButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.SetTemplate(rtb, Templates.Titolo1);
+        private void TmNormalebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.SetTemplate(Templates.Normale);
+        private void Titolo1barButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => CurrentDocument.SetTemplate(Templates.Titolo1);
         private void TmplNatalebarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
-            CurrentDocument.InsertImageFromPath(rtb, @"../../img/tema-natale.png");
-            CurrentDocument.SetTemplate(rtb, Templates.TitoloNatale);
-        } 
+            CurrentDocument.InsertImageFromPath(@"../../img/tema-natale.png");
+            CurrentDocument.SetTemplate(Templates.TitoloNatale);
+        }
+        private void AnteprbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => PrintHelper.PrintPreview();
+        private void ImpostaPagbarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => PrintHelper.PageSetup();
+        private void StampabarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) => PrintHelper.Print();
     }
 }

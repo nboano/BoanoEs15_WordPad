@@ -117,6 +117,18 @@
             this.TitolobarStaticItem = new DevExpress.XtraBars.BarStaticItem();
             this.barEditItem5 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemTextEdit4 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.barListItem1 = new DevExpress.XtraBars.BarListItem();
+            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
+            this.barWorkspaceMenuItem1 = new DevExpress.XtraBars.BarWorkspaceMenuItem();
+            this.workspaceManager1 = new DevExpress.Utils.WorkspaceManager(this.components);
+            this.ribbonGalleryBarItem = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            this.TmNormalebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.Titolo1barButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.TmplNatalebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.PPreviewbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.ImpostaPagbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.AnteprbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.StampabarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.HomeribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.AppuntiribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.UndoRedoribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -128,6 +140,7 @@
             this.FileribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.FGestribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.SalvaribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.StamparibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.InsertribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ImgribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.AspettoribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -136,14 +149,6 @@
             this.lblParole = new System.Windows.Forms.Label();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barListItem1 = new DevExpress.XtraBars.BarListItem();
-            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
-            this.barWorkspaceMenuItem1 = new DevExpress.XtraBars.BarWorkspaceMenuItem();
-            this.workspaceManager1 = new DevExpress.Utils.WorkspaceManager(this.components);
-            this.ribbonGalleryBarItem = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.TmNormalebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
-            this.Titolo1barButtonItem = new DevExpress.XtraBars.BarButtonItem();
-            this.TmplNatalebarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
@@ -483,9 +488,13 @@
             this.ribbonGalleryBarItem,
             this.TmNormalebarButtonItem,
             this.Titolo1barButtonItem,
-            this.TmplNatalebarButtonItem});
+            this.TmplNatalebarButtonItem,
+            this.PPreviewbarButtonItem,
+            this.ImpostaPagbarButtonItem,
+            this.AnteprbarButtonItem,
+            this.StampabarButtonItem});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 53;
+            this.ribbonControl1.MaxItemId = 58;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.HomeribbonPage,
@@ -882,6 +891,104 @@
             this.repositoryItemTextEdit4.AutoHeight = false;
             this.repositoryItemTextEdit4.Name = "repositoryItemTextEdit4";
             // 
+            // barListItem1
+            // 
+            this.barListItem1.Caption = "barListItem1";
+            this.barListItem1.Id = 46;
+            this.barListItem1.Name = "barListItem1";
+            // 
+            // barSubItem1
+            // 
+            this.barSubItem1.Caption = "barSubItem1";
+            this.barSubItem1.Id = 47;
+            this.barSubItem1.Name = "barSubItem1";
+            // 
+            // barWorkspaceMenuItem1
+            // 
+            this.barWorkspaceMenuItem1.Caption = "barWorkspaceMenuItem1";
+            this.barWorkspaceMenuItem1.Id = 48;
+            this.barWorkspaceMenuItem1.Name = "barWorkspaceMenuItem1";
+            this.barWorkspaceMenuItem1.WorkspaceManager = this.workspaceManager1;
+            // 
+            // workspaceManager1
+            // 
+            this.workspaceManager1.TargetControl = this;
+            this.workspaceManager1.TransitionType = pushTransition1;
+            // 
+            // ribbonGalleryBarItem
+            // 
+            this.ribbonGalleryBarItem.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup1.Caption = "Group1";
+            galleryItem1.Caption = "Normale";
+            galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem1});
+            this.ribbonGalleryBarItem.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup1});
+            this.ribbonGalleryBarItem.Id = 49;
+            this.ribbonGalleryBarItem.Name = "ribbonGalleryBarItem";
+            // 
+            // TmNormalebarButtonItem
+            // 
+            this.TmNormalebarButtonItem.Caption = "Normale";
+            this.TmNormalebarButtonItem.Id = 50;
+            this.TmNormalebarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TmNormalebarButtonItem.ImageOptions.Image")));
+            this.TmNormalebarButtonItem.Name = "TmNormalebarButtonItem";
+            this.TmNormalebarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.TmNormalebarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TmNormalebarButtonItem_ItemClick);
+            // 
+            // Titolo1barButtonItem
+            // 
+            this.Titolo1barButtonItem.Caption = "Titolo Pazzerello";
+            this.Titolo1barButtonItem.Id = 51;
+            this.Titolo1barButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Titolo1barButtonItem.ImageOptions.Image")));
+            this.Titolo1barButtonItem.Name = "Titolo1barButtonItem";
+            this.Titolo1barButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.Titolo1barButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Titolo1barButtonItem_ItemClick);
+            // 
+            // TmplNatalebarButtonItem
+            // 
+            this.TmplNatalebarButtonItem.Caption = "Nataliziah";
+            this.TmplNatalebarButtonItem.Id = 52;
+            this.TmplNatalebarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TmplNatalebarButtonItem.ImageOptions.Image")));
+            this.TmplNatalebarButtonItem.Name = "TmplNatalebarButtonItem";
+            this.TmplNatalebarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.TmplNatalebarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TmplNatalebarButtonItem_ItemClick);
+            // 
+            // PPreviewbarButtonItem
+            // 
+            this.PPreviewbarButtonItem.Id = 57;
+            this.PPreviewbarButtonItem.Name = "PPreviewbarButtonItem";
+            // 
+            // ImpostaPagbarButtonItem
+            // 
+            this.ImpostaPagbarButtonItem.Caption = "Imposta pagina";
+            this.ImpostaPagbarButtonItem.Id = 54;
+            this.ImpostaPagbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ImpostaPagbarButtonItem.ImageOptions.Image")));
+            this.ImpostaPagbarButtonItem.Name = "ImpostaPagbarButtonItem";
+            this.ImpostaPagbarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.ImpostaPagbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ImpostaPagbarButtonItem_ItemClick);
+            // 
+            // AnteprbarButtonItem
+            // 
+            this.AnteprbarButtonItem.Caption = "Anteprima";
+            this.AnteprbarButtonItem.Id = 55;
+            this.AnteprbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("AnteprbarButtonItem.ImageOptions.Image")));
+            this.AnteprbarButtonItem.Name = "AnteprbarButtonItem";
+            this.AnteprbarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.AnteprbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.AnteprbarButtonItem_ItemClick);
+            // 
+            // StampabarButtonItem
+            // 
+            this.StampabarButtonItem.Caption = "Stampa";
+            this.StampabarButtonItem.Id = 56;
+            this.StampabarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("StampabarButtonItem.ImageOptions.Image")));
+            this.StampabarButtonItem.Name = "StampabarButtonItem";
+            this.StampabarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.StampabarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.StampabarButtonItem_ItemClick);
+            // 
             // HomeribbonPage
             // 
             this.HomeribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -954,7 +1061,8 @@
             // 
             this.FileribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.FGestribbonPageGroup,
-            this.SalvaribbonPageGroup});
+            this.SalvaribbonPageGroup,
+            this.StamparibbonPageGroup});
             this.FileribbonPage.Name = "FileribbonPage";
             this.FileribbonPage.Text = "File";
             // 
@@ -970,6 +1078,14 @@
             this.SalvaribbonPageGroup.ItemLinks.Add(this.SaveAsbarButtonItem);
             this.SalvaribbonPageGroup.Name = "SalvaribbonPageGroup";
             this.SalvaribbonPageGroup.Text = "Salva il documento";
+            // 
+            // StamparibbonPageGroup
+            // 
+            this.StamparibbonPageGroup.ItemLinks.Add(this.ImpostaPagbarButtonItem);
+            this.StamparibbonPageGroup.ItemLinks.Add(this.AnteprbarButtonItem);
+            this.StamparibbonPageGroup.ItemLinks.Add(this.StampabarButtonItem);
+            this.StamparibbonPageGroup.Name = "StamparibbonPageGroup";
+            this.StamparibbonPageGroup.Text = "Stampa";
             // 
             // InsertribbonPage
             // 
@@ -1011,6 +1127,7 @@
             // 
             // lblParole
             // 
+            this.lblParole.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblParole.AutoSize = true;
             this.lblParole.Location = new System.Drawing.Point(3, 492);
             this.lblParole.Name = "lblParole";
@@ -1032,72 +1149,6 @@
             this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // barListItem1
-            // 
-            this.barListItem1.Caption = "barListItem1";
-            this.barListItem1.Id = 46;
-            this.barListItem1.Name = "barListItem1";
-            // 
-            // barSubItem1
-            // 
-            this.barSubItem1.Caption = "barSubItem1";
-            this.barSubItem1.Id = 47;
-            this.barSubItem1.Name = "barSubItem1";
-            // 
-            // barWorkspaceMenuItem1
-            // 
-            this.barWorkspaceMenuItem1.Caption = "barWorkspaceMenuItem1";
-            this.barWorkspaceMenuItem1.Id = 48;
-            this.barWorkspaceMenuItem1.Name = "barWorkspaceMenuItem1";
-            this.barWorkspaceMenuItem1.WorkspaceManager = this.workspaceManager1;
-            // 
-            // workspaceManager1
-            // 
-            this.workspaceManager1.TargetControl = this;
-            this.workspaceManager1.TransitionType = pushTransition1;
-            // 
-            // ribbonGalleryBarItem
-            // 
-            this.ribbonGalleryBarItem.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup1.Caption = "Group1";
-            galleryItem1.Caption = "Normale";
-            galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem1});
-            this.ribbonGalleryBarItem.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup1});
-            this.ribbonGalleryBarItem.Id = 49;
-            this.ribbonGalleryBarItem.Name = "ribbonGalleryBarItem";
-            // 
-            // TmNormalebarButtonItem
-            // 
-            this.TmNormalebarButtonItem.Caption = "Normale";
-            this.TmNormalebarButtonItem.Id = 50;
-            this.TmNormalebarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TmNormalebarButtonItem.ImageOptions.Image")));
-            this.TmNormalebarButtonItem.Name = "TmNormalebarButtonItem";
-            this.TmNormalebarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.TmNormalebarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TmNormalebarButtonItem_ItemClick);
-            // 
-            // Titolo1barButtonItem
-            // 
-            this.Titolo1barButtonItem.Caption = "Titolo Pazzerello";
-            this.Titolo1barButtonItem.Id = 51;
-            this.Titolo1barButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Titolo1barButtonItem.ImageOptions.Image")));
-            this.Titolo1barButtonItem.Name = "Titolo1barButtonItem";
-            this.Titolo1barButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.Titolo1barButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Titolo1barButtonItem_ItemClick);
-            // 
-            // TmplNatalebarButtonItem
-            // 
-            this.TmplNatalebarButtonItem.Caption = "Nataliziah";
-            this.TmplNatalebarButtonItem.Id = 52;
-            this.TmplNatalebarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TmplNatalebarButtonItem.ImageOptions.Image")));
-            this.TmplNatalebarButtonItem.Name = "TmplNatalebarButtonItem";
-            this.TmplNatalebarButtonItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.TmplNatalebarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TmplNatalebarButtonItem_ItemClick);
             // 
             // frmMain
             // 
@@ -1243,6 +1294,11 @@
         private DevExpress.XtraBars.BarButtonItem TmNormalebarButtonItem;
         private DevExpress.XtraBars.BarButtonItem Titolo1barButtonItem;
         private DevExpress.XtraBars.BarButtonItem TmplNatalebarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem PPreviewbarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem ImpostaPagbarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem AnteprbarButtonItem;
+        private DevExpress.XtraBars.BarButtonItem StampabarButtonItem;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup StamparibbonPageGroup;
     }
 }
 
